@@ -1,0 +1,29 @@
+.container-midl{
+	max-width: 1200px;
+	margin: 0 auto;
+
+}
+.cars__wrapper{
+	display: flex;
+	justify-content: space-between;
+	
+}
+.flter{
+flex: 0 1 25%;
+background-color: rgb(236, 236, 236);
+padding: 5px;
+}
+.cars{
+
+}
+.cars__list{
+	
+	display: flex;
+	flex-wrap: wrap;
+}
+.cars__list > .item {
+	flex: 0 1 32%;
+	border: 1px solid #000;
+	border-radius: 10px;
+	overflow: hidden;
+ }
