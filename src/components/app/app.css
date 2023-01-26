@@ -27,3 +27,76 @@ padding: 5px;
 	border-radius: 10px;
 	overflow: hidden;
  }
+
+ /** @format */
+
+.header__container {
+	max-width: 1200px;
+	margin: 0 auto;
+ }
+ .header__line {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 0;
+	border-bottom: 1px solid rgb(128, 123, 123);
+ }
+ .header__title-top {
+	font-size: 18px;
+ }
+ .header__block-top > button + button {
+	margin-left: 30px;
+ }
+ .header__block-center {
+	font-size: 15px;
+	text-align: center;
+ }
+ .header__block-center a {
+	display: block;
+ }
+ .header__socialNetwork {
+	display: flex;
+ }
+ .header__socialNetwork > a + a {
+	margin-left: 10px;
+ }
+ .header__carInfo {
+	display: flex;
+ }
+ .header__card,
+ .header__avto {
+	display: block;
+	margin-left: 10px;
+	font-weight: 600;
+	font-size: 20px;
+ }
+ .header__card {
+	color: rgb(219, 0, 0);
+ }
+ .header__card > span,.header__avto > span {
+	width: 90%;
+	display: inline-block;
+ }
+ .header__card > span{
+	 text-align: right;
+ }
+ .header__avto > span{
+	 text-align: left;
+ }
+
+.navbar {
+	background: linear-gradient(to right, #2a324a, #849297 );
+}
+.navbar-container {
+  width: 1000px;
+  margin: 0 auto;
+}
+.navbar-list {
+  display: flex;
+  justify-content: space-between;
+}
+.navbar-item {
+	color: #fff;
+	font-weight: 700;
+  padding: 10px 20px 10px 30px;
+}

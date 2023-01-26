@@ -3,6 +3,8 @@ import './app.css';
 import { Component } from 'react';
 import Carslist from '../cars-list/cars-list';
 import CardFilter from '../card-filter/card-filter';
+import CarsForm from '../cars-form/cars-form';
+import Header from '../header/header';
 class App extends Component {
 	constructor(props){
 		super(props);
@@ -46,7 +48,8 @@ class App extends Component {
 	const {data} = this.state;
 	const newData = this.filterCars(data);
 	return (
-		
+		<>
+		<Header/>
 		<section className="cars">
           <div className="container-midl">
             <h2>Объявление о продаже б/у авто с пробегом в Киеве</h2>
@@ -56,9 +59,11 @@ class App extends Component {
 		</div>
 		<Carslist data={newData} onDelete={this.deletecar}/>
 		</div>
+		{/* <CarsForm/> */}
        </div>
+		 
         </section>
-
+		  </>
 	 );
   }
 }
